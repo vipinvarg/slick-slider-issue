@@ -1,0 +1,22 @@
+.your-slider{
+   visibility:hidden;
+   opacity:0;  
+   transition: opacity 1s;
+}
+
+.your-slider.slick-initialized{
+  visibility:visible;
+  opacity:1;
+}
+
+.your-slider .your-item{
+  display:none ;
+}
+
+.your-slider .your-item:first-child{
+  display:block; visibility:hidden;
+} 
+
+.your-slider.slick-initialized .your-item{
+  display:block;visibility:visible!important;
+}
